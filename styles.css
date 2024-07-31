@@ -1,0 +1,448 @@
+:root {
+    --color1: #f9f9f9;
+    --color2: black;
+    --color3: #4ac41b;
+
+    --text-color1: black;
+    --text-color2: #f9f9f9;
+
+
+    /* Fondos */
+    --fondo1: #f8f8f8;
+    --fondo2: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+/* --- Navbar --- */
+#navbar {
+    background: var(--fondo1);
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--color2);
+    text-shadow: 0px 1px 1px var(--color2);
+}
+
+#logo span {
+    color: var(--color3);
+}
+
+.navbar-toggler span {
+    color: var(--color3);
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color1);
+    letter-spacing: 1px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+    background-color: var(--color3);
+    color: var(--color1);
+}
+
+.navbar form button {
+    background-color: var(--color1);
+    border-color: 10px solid var(--color3);
+    color: var(--color3);
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+
+.navbar form button:hover {
+    background-color: var(--color3);
+    border-color: 10px solid var(--color3);
+    color: var(--color1);
+}
+
+/* --- Navbar --- */
+
+/* Principal */
+.principal {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('./img/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.principal .content {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.principal .content h5 {
+    color: var(--text-color2);
+    font-size: 4rem;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px var(--color2);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color2);
+}
+
+.principal .content h1 {
+    color: var(--text-color2);
+    font-size: 5rem;
+    font-weight: 600;
+    text-shadow: 0px, 1px, 1px var(--color2);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color2);
+    margin-top: 5px;
+}
+
+.principal .content p {
+    color: var(--text-color2);
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 0px, 1px, 1px var(--color2);
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.cambiar-contenido::after {
+    content: ' ';
+    color: var(--color3);
+    text-shadow: 0px, 1px, 1px var(--color2);
+    animation: cambiarTexto 10s infinite linear;
+}
+
+@keyframes cambiarTexto {
+    0% {
+        content: 'La Paz';
+    }
+    10% {
+        content: 'Oruro';
+    }
+    20% {
+        content: 'Potosi';
+    }
+    30% {
+        content: 'Pando';
+    }
+    40% {
+        content: 'Beni';
+    }
+    50% {
+        content: 'Cochabamba';
+    }
+    60% {
+        content: 'Tarija';
+    }
+    70% {
+        content: 'Chuquisaca';
+    }
+    80% {
+        content: 'Santa Cruz';
+    }
+    90% {
+        content: 'Pando';
+    }
+    100% {
+        content: 'Beni';
+    }
+}
+
+.principal .content a {
+    padding: 10px;
+    background-color: var(--color1);
+    color: var(--text-color1);
+    letter-spacing: 2px;
+    font-weight: 500;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.principal .content a:hover {
+    background-color: var(--color3);
+    color: var(--text-color2);
+}
+
+@media (max-width: 350px) {
+    .principal .content h5 {
+        font-size: 2rem;
+    }
+
+    .principal .content h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .principal .content h5 {
+        font-size: 2rem;
+    }
+
+    .principal .content h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .principal .content h5 {
+        font-size: 3rem;
+    }
+
+    .principal .content h1 {
+        font-size: 4rem;
+    }
+}
+/* Principal */
+
+/* Reserva */
+#reserva {
+    background-color: var(--fondo2);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.texto-principal {
+    text-align: center;
+    text-shadow: 0 1px 1px var(--color2);
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.texto-principal h1 span {
+    color: var(--color3);
+}
+
+.reserva .card {
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px var(--color2);
+    height: 100%;
+}
+
+.reserva .card img{
+    height: 100%;
+    overflow: cover;
+}
+
+.reserva .row {
+    margin-top: 30px;
+}
+
+.reserva form input {
+    padding: 10px;
+    color: var(--text-color1);
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px var(--color2);
+}
+
+.reserva form textarea {
+    font-size: 15px;
+    border-radius: 10px;
+    color: var(--text-color1);
+    box-shadow: 0px 5px 5px -6px var(--color2);
+    resize: none;
+    height: 150px;
+}
+
+.button {
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--color3);
+    border: 2px solid var(--color3);
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    box-shadow: 0px 5px 5px -6px var(--color2);
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--color3);
+    color: var(--text-color2);
+}
+
+/* Reserva */
+
+/* Paquete */
+#paquete {
+    background: var(--fondo1); 
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.paquete .card {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    overflow: hidden;
+    height: 35rem;
+}
+
+.paquete img {
+    height: 60%;
+}
+.paquete .card .card-body {
+    padding: 10px 10px;
+    background-color: transparent;
+}
+
+.checked {
+    color: var(--color3);
+}
+/* Paquete */
+
+/* Servicios */
+#servicio {
+    background-color: var(--fondo2);
+    padding-bottom: 3rem;
+}
+.servicio .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.servicio .card i {
+    margin-top: 2rem;
+    font-size: 5rem;
+    color: var(--color3);
+}
+
+.servicio .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicio .card .card-body h3 {
+    font-size: 20px;
+}
+
+.servicio .card .card-body p {
+    font-size: 12px;
+}
+
+@media (max-width: 350px) {
+    .servicio .card i {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .servicio .card {
+        flex-direction: row;
+        height: 10rem;
+    }
+
+    .servicio .card i {
+        margin: 20px;
+    }
+}
+/* Servicios */
+
+/* Galeria */
+#galeria {
+    background-color: var(--fondo1);
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.galeria .card {
+    height: 15rem;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.galeria .card img {
+    height: 15rem;
+    transition: 0.5s ease;
+}
+
+.galeria .card img:hover {
+    transform: scale(1.1);
+}
+/* Galeria */
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--fondo2);
+    padding-top: 2rem;
+}
+
+.footer h1 {
+    font-weight: 600;
+}
+
+.footer h1 span {
+    color: var(--color3);
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+.redes-sociales i {
+    padding: 8px;
+    font-size: 1.5rem;
+    color: var(--color3);
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid var(--color3);
+    margin-right: 1rem;
+    transition: 0.5s ease;
+}
+
+.redes-sociales i:hover {
+    color: var(--text-color2);
+    background-color: var(--color3);
+}
+
+.credito {
+    margin-top: 1rem;
+}
+
+.credito p a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-color1);
+}
+
+.credito p a:hover {
+    color: var(--color3);
+}
+
+.copyright {
+    margin-bottom: 2rem;
+}
+/* Footer */
